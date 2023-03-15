@@ -1,0 +1,55 @@
+{
+  "type": "record",
+  "name": "error_consumer",
+  "fields": [
+    {
+      "name": "metadata",
+      "type": "record",
+      "doc": "Event error metadata",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "long",
+          "doc": "A Unix timestamp of the event."
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "doc": "The error message."
+        },
+        {
+          "name": "event",
+          "type": "string",
+          "doc": "The event that caused the error."
+        },
+        {
+          "name": "event_id",
+          "type": "string",
+          "doc": "The ID of the event that caused the error."
+        },
+        {
+          "name": "event_timestamp",
+          "type": "long",
+          "doc": "The timestamp of the event that caused the error."
+        }
+      ]
+    },
+    {
+      "name": "order",
+      "type": "record",
+      "doc": "The order schema.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "long",
+          "doc": "A unique ID of the order."
+        },
+        {
+          "name": "timestamp",
+          "type": "long",
+          "doc": "A Unix timestamp of the time the order was created."
+        },
+      ]
+    }
+  ]
+}
