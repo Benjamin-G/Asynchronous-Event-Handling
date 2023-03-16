@@ -1,3 +1,3 @@
-module ppe4peeps.com/m
+module github.com/Benjamin-G/Asynchronous-Event-Handling
 
 go 1.19
