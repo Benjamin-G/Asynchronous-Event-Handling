@@ -31,6 +31,6 @@
       "name": "order_id",
       "type": "long",
       "doc": "A unique ID of the order."
-    },
+    }
   ]
 }
